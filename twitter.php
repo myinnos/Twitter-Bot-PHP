@@ -1,12 +1,11 @@
 <?php
 
-
 date_default_timezone_set('Asia/Kolkata'); 
 
-$ApiKey = <API_KEY>;
-$ApiSecretKey = <API_SECRET_KEY>;
-$AccessToken = <ACCESS_TOKEN>;
-$AccessTokenSecret = <ACCESS_TOKEN_SECRET>;
+    $ApiKey = <API_KEY>;
+    $ApiSecretKey = <API_SECRET_KEY>;
+    $AccessToken = <ACCESS_TOKEN>;
+    $AccessTokenSecret = <ACCESS_TOKEN_SECRET>;
 
     // add the codebird library
     require_once('codebird/src/codebird.php');
@@ -16,7 +15,7 @@ $AccessTokenSecret = <ACCESS_TOKEN_SECRET>;
 
     //build an array of images to send to twitter
     $reply = $cb->media_upload(array(
-        'media' => ""
+        'media' => <IMAGE_URL> or <IMAGE_URI>
     ));
     
     //upload the file to your twitter account
@@ -24,8 +23,8 @@ $AccessTokenSecret = <ACCESS_TOKEN_SECRET>;
 
     // implode mandatory only for multile media uploads
     $params = array(
-             'status' => "#mesaage",
-             'media_ids' => implode(',', [$mediaID])
+             'status' => "#message",
+             'media_ids' => implode(',', [$mediaID]) // optional
         );
    
     //post the tweet with codebird
