@@ -1,6 +1,6 @@
 <?php
 
-date_default_timezone_set('Asia/Kolkata'); 
+    date_default_timezone_set('Asia/Kolkata'); 
 
     $ApiKey = <API_KEY>;
     $ApiSecretKey = <API_SECRET_KEY>;
