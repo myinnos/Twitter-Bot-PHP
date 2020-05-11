@@ -1,5 +1,5 @@
 # Twitter-Bot-PHP
-Twitter Bot for updating status with photo using PHP
+Twitter Bot for updating status automatically along with media using PHP.
 
 **Register an App in twitter developer account** 
 
